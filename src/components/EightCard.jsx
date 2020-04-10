@@ -1,14 +1,15 @@
 import React from 'react';
 
-const EightCard = ({ eightcard }) => {
+const EightCard = ({ eightcard, index }) => {
     return (
         <div className="eight-card">
             <div className="question">
-                test q
+                {eightcard.question}
             </div>
             <div className="answer">
-                test a
+                {eightcard.answer}
             </div>
+            <div>{index}</div>
         </div>
     )
 }
